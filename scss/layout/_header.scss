@@ -1,0 +1,138 @@
+header {
+  background-color: rgb(35, 37, 54);
+  padding: 27px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid rgb(255, 211, 175);
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-btn {
+    display: none;
+    color: #000;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  ul {
+    display: flex;
+    gap: 32px;
+
+    li {
+      a {
+        /* Text link */
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        transition: 0.7s;
+        &:hover {
+          /* Text link */
+          color: rgb(150, 132, 132);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: left;
+        }
+      }
+
+      .clone {
+        /* Text link */
+        color: rgb(255, 211, 175);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    background-color: rgb(35, 37, 54);
+    padding: 27px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(255, 211, 175);
+    padding: 27px 20px;
+    position: relative;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu-btn {
+      display: flex;
+    }
+    ul {
+      display: none;
+      gap: 32px;
+
+      li {
+        a {
+          /* Text link */
+          color: rgb(255, 255, 255);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: left;
+          transition: 0.7s;
+          &:hover {
+            /* Text link */
+            color: rgb(150, 132, 132);
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+        }
+
+        .clone {
+          /* Text link */
+          color: rgb(255, 211, 175);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: left;
+        }
+      }
+    }
+    .show {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(35, 37, 54);
+      width: 100%;
+      right: 0;
+      left: 0;
+      top: 86px;
+      padding: 20px 0;
+    }
+  }
+}
