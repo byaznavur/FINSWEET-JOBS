@@ -8,6 +8,7 @@ header {
   left: 0;
   right: 0;
   border-bottom: 1px solid rgb(255, 211, 175);
+  z-index: 9999;
 }
 header nav {
   display: -webkit-box;
@@ -155,6 +156,33 @@ header ul li .clone {
     padding: 20px 0;
   }
 }
+.btn {
+  background: rgb(68, 76, 252);
+  padding: 20px 32px;
+  /* Text link */
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  border: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+  position: relative;
+}
+.btn:hover {
+  background: rgb(32, 39, 161);
+  color: rgb(255, 255, 255);
+}
+.btn .btn-shapka {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 footer {
   position: relative;
 }
@@ -485,6 +513,56 @@ footer .footer-bottom-line .footer-bottom .footer-bottom-social a {
     height: 16px;
   }
 }
+.herro {
+  background-color: rgb(35, 37, 54);
+}
+.herro-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+  padding: 100px 0;
+}
+.herro-wrapper-info {
+  width: 50%;
+}
+.herro-wrapper-info h2 {
+  /* H1 Heading */
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.herro-wrapper-info p {
+  /* Paragraph */
+  color: rgb(255, 255, 255);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 20px 0;
+}
+.herro-wrapper-image {
+  position: relative;
+}
+.herro-wrapper-image .careful {
+  position: absolute;
+  right: -18px;
+}
+.herro-wrapper-image .vertical {
+  position: absolute;
+  left: -18px;
+  bottom: 7px;
+}
+
 *,
 ::before,
 ::after {
