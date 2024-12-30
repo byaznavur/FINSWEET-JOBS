@@ -368,3 +368,160 @@
     }
   }
 }
+
+.expertise {
+  background-color: rgb(236, 248, 249);
+
+  &-wrapper {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+    &-info {
+      width: 50%;
+      h4 {
+        /* Caption */
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        /* H2 Heading */
+        color: rgb(35, 37, 54);
+        font-family: Poppins;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 20px 0;
+      }
+      p {
+        /* Paragraph */
+        color: rgb(93, 95, 109);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+    &-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      position: relative;
+
+      .square {
+        position: absolute;
+        top: -14px;
+        left: 0;
+        width: 14px;
+        height: 14px;
+        background: rgb(68, 76, 252);
+      }
+      &-item {
+        padding: 32px;
+        background-color: #fff;
+        display: flex;
+        width: 515px;
+
+        img {
+          margin-right: 20px;
+        }
+      }
+
+      .expert-line {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .expertise {
+    background-color: rgb(236, 248, 249);
+    padding: 100px 0;
+    &-wrapper {
+      display: flex;
+      padding: 100px 0;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 20px;
+      &-info {
+        width: 100%;
+        h4 {
+          /* Caption */
+          color: rgb(0, 0, 0);
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        h3 {
+          /* H2 Heading */
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 38px;
+          letter-spacing: 0px;
+          text-align: center;
+          margin: 20px 0;
+        }
+        p {
+          /* Paragraph */
+          color: rgb(93, 95, 109);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+      }
+      &-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: relative;
+
+        .square {
+          position: absolute;
+          top: -14px;
+          left: 0;
+          width: 14px;
+          height: 14px;
+          background: rgb(68, 76, 252);
+        }
+        &-item {
+          padding: 32px;
+          background-color: #fff;
+          display: flex;
+          width: 100%;
+
+          img {
+            margin-right: 20px;
+          }
+        }
+
+        .expert-line {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
