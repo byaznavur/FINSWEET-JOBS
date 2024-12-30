@@ -496,6 +496,7 @@
         flex-direction: column;
         gap: 12px;
         position: relative;
+        margin: 20px 0;
 
         .square {
           position: absolute;
@@ -510,6 +511,7 @@
           background-color: #fff;
           display: flex;
           width: 100%;
+          align-items: start;
 
           img {
             margin-right: 20px;
@@ -687,6 +689,163 @@
           .card-btn {
             width: 100%;
             text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.process {
+  padding: 100px 0;
+
+  &-wrapper {
+    &-info {
+      width: 60%;
+      h4 {
+        /* Caption */
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        /* H2 Heading */
+        color: rgb(35, 37, 54);
+        font-family: Poppins;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 16px 0;
+      }
+      p {
+        /* Paragraph */
+        color: rgb(35, 37, 54);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+    &-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 30px;
+      gap: 48px;
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        box-sizing: border-box;
+        border: 1px solid rgba(35, 37, 54, 0.17);
+        padding: 32px;
+        position: relative;
+        gap: 10px;
+
+        span {
+          position: absolute;
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 32px;
+          letter-spacing: 0px;
+          text-align: left;
+          right: 20px;
+          top: 20px;
+        }
+        .process-line {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .process {
+    padding: 100px 0;
+
+    &-wrapper {
+      &-info {
+        width: 100%;
+        h4 {
+          /* Caption */
+          color: rgb(0, 0, 0);
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        h3 {
+          /* H2 Heading */
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 38px;
+          font-weight: 500;
+          line-height: 38px;
+          letter-spacing: 0px;
+          text-align: center;
+          margin: 16px 0;
+        }
+        p {
+          /* Paragraph */
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+      }
+      &-cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 30px;
+        gap: 48px;
+        &-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+          box-sizing: border-box;
+          border: 1px solid rgba(35, 37, 54, 0.17);
+          padding: 32px;
+          position: relative;
+          gap: 10px;
+
+          span {
+            position: absolute;
+            color: rgb(35, 37, 54);
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            right: 20px;
+            top: 20px;
+          }
+          .process-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
           }
         }
       }
