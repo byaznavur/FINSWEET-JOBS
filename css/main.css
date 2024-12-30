@@ -522,6 +522,7 @@ footer .footer-bottom-line .footer-bottom .footer-bottom-social a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 30px 0;
 }
 .herro-wrapper {
   display: -webkit-box;
@@ -698,9 +699,6 @@ body {
   .container {
     padding: 0 20px;
   }
-  main {
-    margin-top: 0;
-  }
 }
 a {
   text-decoration: none;
@@ -713,4 +711,10 @@ li {
 main {
   margin-top: 86px;
   min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
