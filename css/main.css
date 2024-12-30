@@ -183,6 +183,36 @@ header ul li .clone {
   top: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .btn {
+    background: rgb(68, 76, 252);
+    padding: 20px 32px;
+    /* Text link */
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: none;
+    -webkit-transition: 1s;
+    transition: 1s;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .btn:hover {
+    background: rgb(32, 39, 161);
+    color: rgb(255, 255, 255);
+  }
+  .btn .btn-shapka {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
 footer {
   position: relative;
 }
@@ -1114,6 +1144,187 @@ footer .footer-bottom-line .footer-bottom .footer-bottom-social a {
     position: absolute;
     bottom: 0;
     width: 100%;
+  }
+}
+.solutions {
+  background: rgb(255, 230, 210);
+  padding: 100px 0;
+}
+.solutions-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.solutions-wrapper-info {
+  width: 60%;
+}
+.solutions-wrapper-info h3 {
+  /* Caption */
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.solutions-wrapper-info h2 {
+  /* H2 Heading */
+  color: rgb(35, 37, 54);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 20px 0;
+}
+.solutions-wrapper-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+.solutions-wrapper-cards-item {
+  padding: 30px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 5px;
+  border-radius: 10px;
+}
+.solutions-wrapper-cards-item .herro-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.solutions-wrapper-cards-item .herro-card h3 {
+  /* H6 Heading */
+  color: rgb(0, 0, 0);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.solutions-wrapper-cards-item .herro-card h4 {
+  /* Paragraph */
+  color: rgb(35, 37, 54);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.solutions-wrapper-cards-item .card-btn {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .solutions {
+    background: rgb(255, 230, 210);
+    padding: 100px 0;
+  }
+  .solutions-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .solutions-wrapper-info {
+    width: 100%;
+  }
+  .solutions-wrapper-info h3 {
+    /* Caption */
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .solutions-wrapper-info h2 {
+    /* H2 Heading */
+    color: rgb(35, 37, 54);
+    font-family: Poppins;
+    font-size: 37px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .solutions-wrapper-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+  }
+  .solutions-wrapper-cards-item {
+    padding: 30px;
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 5px;
+    border-radius: 10px;
+  }
+  .solutions-wrapper-cards-item .herro-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .solutions-wrapper-cards-item .herro-card h3 {
+    /* H6 Heading */
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .solutions-wrapper-cards-item .herro-card h4 {
+    /* Paragraph */
+    color: rgb(35, 37, 54);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .solutions-wrapper-cards-item .card-btn {
+    width: 100%;
+    text-align: center;
   }
 }
 *,
