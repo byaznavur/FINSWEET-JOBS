@@ -863,9 +863,10 @@
 
     &-card {
       display: flex;
-      gap: 20px;
+      gap: 10px;
       flex-direction: column;
       align-items: start;
+      width: 50%;
       h3 {
         /* H2 Heading */
         color: rgb(35, 37, 54);
@@ -909,14 +910,16 @@
       display: flex;
       flex-direction: column;
       align-items: start;
-
+      justify-content: center;
+      width: 50%;
+      padding: 20px;
       &-vertical {
         position: absolute;
-        left: 0;
+        left: -40px;
       }
       &-quote {
         position: absolute;
-        top: 0;
+        top: -60px;
         right: 0;
       }
       h3 {
@@ -928,6 +931,158 @@
         line-height: 36px;
         letter-spacing: 0px;
         text-align: left;
+      }
+      &-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #c6b5b5;
+
+        &-person {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          h5 {
+            /* H6 Heading */
+            color: rgb(35, 37, 54);
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 28px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+          p {
+            /* Paragraph Small */
+            color: rgb(35, 37, 54);
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customer {
+    background: rgb(249, 249, 255);
+    padding: 100px 0;
+
+    &-wrapper {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      gap: 20px;
+      &-card {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h3 {
+          /* H2 Heading */
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 44px;
+          font-weight: 500;
+          line-height: 48px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+        h4 {
+          /* Paragraph Large */
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+        p {
+          /* Paragraph */
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+
+        &-images {
+          display: flex;
+          gap: 10px;
+        }
+      }
+
+      &-item {
+        background-color: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        &-vertical {
+          position: absolute;
+          left: -40px;
+          display: none;
+        }
+        &-quote {
+          position: absolute;
+          top: -60px;
+          display: none;
+          right: 0;
+        }
+        h3 {
+          /* H4 Heading */
+          color: rgb(35, 37, 54);
+          font-family: Poppins;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 30px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+        &-footer {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          background-color: #c6b5b5;
+
+          &-person {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            h5 {
+              /* H6 Heading */
+              color: rgb(35, 37, 54);
+              font-family: Poppins;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 28px;
+              letter-spacing: 0px;
+              text-align: left;
+            }
+            p {
+              /* Paragraph Small */
+              color: rgb(35, 37, 54);
+              font-family: Poppins;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 20px;
+              letter-spacing: 0px;
+              text-align: left;
+            }
+          }
+        }
       }
     }
   }
@@ -990,6 +1145,76 @@
           line-height: 24px;
           letter-spacing: 0px;
           text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blogs {
+    background: rgb(236, 248, 249);
+    padding: 100px 0;
+
+    &-wrapper {
+      h2 {
+        /* H2 Heading */
+        color: rgb(35, 37, 54);
+        font-family: Poppins;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+
+      &-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        &-item {
+          display: flex;
+          gap: 32px;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          span {
+            /* Paragraph Small */
+            color: rgb(35, 37, 54);
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: center;
+          }
+
+          h3 {
+            /* H4 Heading */
+            color: rgb(35, 37, 54);
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0px;
+            text-align: center;
+            margin: 20px 0;
+          }
+
+          a {
+            /* Text link */
+            color: rgb(68, 76, 252);
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0px;
+            text-align: center;
+          }
         }
       }
     }
