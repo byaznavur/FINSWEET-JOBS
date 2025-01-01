@@ -1220,3 +1220,136 @@
     }
   }
 }
+
+.message {
+  margin: 100px 0;
+  .message-wrapper {
+    position: relative;
+    /* secondary blue */
+    background: rgb(102, 109, 255);
+    min-height: 333px;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .message-shapka {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .message-vertical {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 333px;
+    }
+
+    &-info {
+      width: 50%;
+      span {
+        /* Caption */
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 3px;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        /* H3 Heading */
+        color: rgb(255, 255, 255);
+        font-family: Poppins;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+
+    input {
+      padding: 20px 29px;
+      width: 454px;
+      /* Text link */
+      color: rgb(35, 37, 54);
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .message {
+    margin: 50px 0;
+    .message-wrapper {
+      position: relative;
+      /* secondary blue */
+      background: rgb(102, 109, 255);
+      min-height: 333px;
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      .message-shapka {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .message-vertical {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+      }
+
+      &-info {
+        width: 100%;
+        span {
+          /* Caption */
+          color: rgb(255, 255, 255);
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-align: left;
+          text-transform: uppercase;
+        }
+
+        h3 {
+          /* H3 Heading */
+          color: rgb(255, 255, 255);
+          font-family: Poppins;
+          font-size: 36px;
+          font-weight: 600;
+          line-height: 54px;
+          letter-spacing: 0px;
+          text-align: left;
+        }
+      }
+
+      input {
+        padding: 20px 29px;
+        width: 100%;
+        /* Text link */
+        color: rgb(35, 37, 54);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+}
